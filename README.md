@@ -18,6 +18,22 @@ This is the repository containing code to reproduce the main results from the pa
   * 2017: https://purl.stanford.edu/kp222tm1554
   * 2018: https://purl.stanford.edu/nk828sc2920
 
+Each of the following links contains AIA data in `.tar` files, of the format: `AIA_<channel>_2010<month>.tar`. The directory structure for these files is:
+
+```
+AIA_0094_201401.tar
+
+.
+└── 01 # month
+    ├── 01 # day
+    :   └── *.npz 
+    :
+    └── 31
+        └── *.npz 
+```
+
+---
+
 - You should now have a folder with AIA data, 39 channels of EVE data, and separate .npy and .csv files for the integrated EVE MEGS-A irradiance.
 - Create another folder for data in which we'll create symlinks for AIA images, so as not to mess up your "clean" data folder. For instance call it "data_30mn_cadence" because that's the cadence we'll be working with here.
 - In canonical_data/, run "python link_all.py --data clean_data_folder/ --base experimental_data_folder" . You should now have symlinks to AIA data in the experimental data folder.
