@@ -18,7 +18,7 @@ This is the repository containing code to reproduce the main results from the pa
   * 2017: https://purl.stanford.edu/kp222tm1554
   * 2018: https://purl.stanford.edu/nk828sc2920
 
-Each of the following links contains AIA data in `.tar` files, of the format: `AIA_<channel>_2010<month>.tar`. The directory structure for these files is:
+Each of the following links contains AIA data in `.tar` files, of the format: `AIA_<channel>_<year><month>.tar`. The directory structure for these files is:
 
 ```
 AIA_0094_201401.tar
